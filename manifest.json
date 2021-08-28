@@ -9,13 +9,13 @@
   "browser_action": {
     "default_icon": "Images/messenger_icon.png",
     "default_title": "Messenger filter",
-    "default_popup": "Popup.html"
+    "default_popup": "HTML/Popup.html"
   },
 
   "content_scripts": [
     {
       "matches": ["https://www.messenger.com/t/*"],
-      "js": ["fetch_analytics.js"]
+      "js": ["src/filterMessenger.js"]
     }
   ],
 
@@ -24,7 +24,7 @@
  },
 
  "options_ui": {
-  "page": "settings_page.html"
+  "page": "HTML/settings_page.html"
   },
 
  "permissions": [
